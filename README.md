@@ -1,9 +1,15 @@
-# frontend-assignment
-Fork this seed project on Github to create your assignment.
+# frontend-assignment by Michael Rambeau
 
-## Description
-In this project, you will be creating a drag and drop system that allows users to place markers on a coordinate grid.
-Markers should snap to the closest X and Y cordinate.
+## How to check
+
+Go to 'Game' menu (http://localhost:8080/game) to check the '4-marker game' I did (see requirement below)
+
+TO DO
+
+* Mobile friendly: the layout is responsive but tap events MUST be implemented
+* Add a reset button to restart the game
+* Add X and Y numbers on the grid, to be able to understand what the number mean (using 3D library ?)
+
 
 ## Requirements
 Create a webpage that has a main content area with a left sidebar.

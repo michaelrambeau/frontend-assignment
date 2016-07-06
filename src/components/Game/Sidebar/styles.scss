@@ -1,0 +1,15 @@
+.markerContainer{
+  border: solid 2px blue; // border color will be overridden
+  width: 80px;
+  margin-bottom: 1rem
+}
+.xy{
+  display: flex;
+  > div {
+    flex: 1;
+    color: white;
+  }
+}
+.markerRow{
+  padding: .5rem 0
+}

@@ -1,0 +1,21 @@
+.gridContainer{
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  // &:before{
+  //   display: table;
+  //   content: " ";
+  //   clear: both;
+  // }
+}
+.gridContainer > div{
+  border: 1px solid white;
+  border-width: 0 1px 1px 0;
+  &:before{
+    content:'';
+    float:left;
+    padding-top:100%;
+  }
+  // padding-top: 100%;
+  // float: left;
+}
