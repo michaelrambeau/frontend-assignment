@@ -1,7 +1,7 @@
 import React from 'react'
 
-import Marker from '../Marker/Marker'
-import MarkerIcon from '../Marker/MarkerIcon'
+import MarkerDisabled from '../Marker/MarkerDisabled'
+import MarkerDnd from '../Marker/MarkerDnd'
 import classes from './styles.scss'
 
 const MarkerContainer = ({ marker, move, disabled }) => (
@@ -16,9 +16,9 @@ const MarkerContainer = ({ marker, move, disabled }) => (
     </div>
     <div className={classes.markerRow}>
       {disabled ? (
-        <MarkerIcon color={'#ddd'} />
+        <MarkerDisabled />
       ) : (
-        <Marker marker={marker} move={move} />
+        <MarkerDnd marker={marker} move={move} />
       )}
     </div>
   </div>

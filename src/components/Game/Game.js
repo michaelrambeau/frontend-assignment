@@ -12,13 +12,13 @@ const View = React.createClass({
     const { markers, rows, moveMarker, canBeChecked, checkRequest } = this.props
     return (
       <div className={classes.gameContainer}>
-        <p className="alert alert-info">
+        <div className="notification" style={{ backgroundColor: 'white' }}>
           Drag and drop the 4 markers
           {' '}<span className="fa fa-map-marker" />{' '}
           from the sidebar to the grid.
-        </p>
+        </div>
         <div className={classes.gameLayout}>
-          <div>
+          <div className={classes.sidebar}>
             {markers.all.map((marker, i) => (
               <Marker
                 key={i}
@@ -34,18 +34,19 @@ const View = React.createClass({
               markers={markers.onMap}
               move={moveMarker}
             />
-            <button
-              className="btn btn-primary btn-block"
-              disabled={!canBeChecked}
-              style={{ margin: '1rem 0' }}
-              onClick={checkRequest}
-            >
-              <span className="fa fa-check"></span>
-              {' '}
-              CHECK
-            </button>
           </div>
         </div>
+        <button
+          className={`button is-info is-large btn-block${!canBeChecked ? ' is-disabled' : ''}`}
+          disabled={!canBeChecked}
+          style={{ margin: '1rem 0', width: '100%' }}
+          onClick={checkRequest}
+          >
+          <span className="icon">
+            <span className="fa fa-check"></span>
+          </span>
+          <span>CHECK</span>
+        </button>
       </div>
     )
   }

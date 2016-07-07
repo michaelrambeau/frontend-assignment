@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Marker from '../Marker/Marker'
+import MarkerDnd from '../Marker/MarkerDnd'
 import { DropTarget } from 'react-dnd'
 
 function moveMarker (x, y, props) {
@@ -24,7 +24,7 @@ const ConnectedCell = ({ children, connectDropTarget, isOver, marker, width, mov
       style={styles}
     >
       {marker && (
-        <Marker
+        <MarkerDnd
           marker={marker}
           move={move}
         />

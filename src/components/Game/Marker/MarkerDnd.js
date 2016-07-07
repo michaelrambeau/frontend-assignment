@@ -1,5 +1,8 @@
+// The draggable marker used in the sidebar and in the grid
+
 import React from 'react'
 import { DragSource } from 'react-dnd'
+import classes from './styles.scss'
 
 import MarkerIcon from './MarkerIcon'
 
@@ -27,7 +30,10 @@ function collect (connect, monitor) {
 }
 
 const Marker = ({ marker, connectDragSource, isDragging }) => connectDragSource(
-  <div style={{ opacity: isDragging ? 0.5 : 1 }}>
+  <div
+    style={{ opacity: isDragging ? 0.5 : 1 }}
+    className={classes.Marker}
+  >
     <MarkerIcon color={marker.color} />
   </div>
 )
