@@ -1,3 +1,9 @@
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-bottom: 1px solid transparent;
+}
 .markerContainer{
   border: solid 2px blue; // border color will be overridden
   width: 80px;

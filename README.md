@@ -1,21 +1,17 @@
 # frontend-assignment by Michael Rambeau
 
-## How to check
+![image](https://cloud.githubusercontent.com/assets/5546996/16687869/ff6dfcea-4555-11e6-8c60-3f9a5d562310.png)
 
-Go to 'Game' menu (http://localhost:8080/game) to check the '4-marker game' I did (see requirement below)
+## TO DO
 
-Note: once the markers are placed on the grid, they can be moved by drag and drop.
-
-TO DO
-
-* Mobile friendly: the layout is responsive but drag and drop tap events MUST be implemented
-* Add a reset button to restart the game
-* Add X and Y numbers on the grid, to be able to understand what the number mean (using `D3` library ?)
-* Prevent the user from placing 2 markers at the same place on the grid
-* Improve the layout, the current menu (from the boilerplate used to create the project) does not look very good.
-* Build the project in production mode and deploy on a free static hosting service (surge.sh for example).
-* Add a screenshot in the README.md file
-* Add an implementation section in the README.md to explain how the game was implemented, using [ReactDnD](https://github.com/gaearon/react-dnd) library.
+* [ ] Mobile friendly: the layout is responsive but drag and drop tap events MUST be implemented
+* [x] Add a reset button to restart the game
+* [ ] Add X and Y numbers on the grid, to be able to understand what the number mean (using `D3` library ?)
+* [ ] Prevent the user from placing 2 markers at the same place on the grid
+* [x] Improve the layout, the current menu (from the boilerplate used to create the project) does not look very good.
+* [x] Build the project in production mode and deploy on a free static hosting service (http://markers.surge.sh/).
+* [x] Add a screenshot in the README.md file
+* [ ] Add an implementation section in the README.md to explain how the game was implemented, using [ReactDnD](https://github.com/gaearon/react-dnd) library.
 
 
 ## Requirements

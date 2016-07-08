@@ -16,7 +16,7 @@ const MarkerContainer = ({ marker, move, disabled }) => (
     </div>
     <div className={classes.markerRow}>
       {disabled ? (
-        <MarkerDisabled />
+        <MarkerDisabled correct={marker.correct} />
       ) : (
         <MarkerDnd marker={marker} move={move} />
       )}

@@ -9,10 +9,10 @@ import msgbox from './msgbox'
 // Colors of the 4 markers
 const colors = ['#ffae63', '#f76d42', '#d63c4a', '#9c0042']
 
-// The number size of the grid (number of row)
+// The size of the grid (number of row)
 const X = 10
 
-// Target where the user has to drag and drop the markers
+// Targets where the user has to drag and drop the markers
 const targets = getRandomPoints(X, 4)
 
 // The markers the user has to drag and drop
@@ -114,5 +114,11 @@ export function moveMarker (id, x, y) {
       x,
       y
     }
+  }
+}
+
+export function reset () {
+  return {
+    type: 'RESET'
   }
 }
