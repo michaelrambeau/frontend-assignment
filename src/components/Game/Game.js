@@ -1,8 +1,12 @@
 import React from 'react'
 
 import { DragDropContext } from 'react-dnd'
+
 import HTML5Backend from 'react-dnd-html5-backend'
-//import { default as TouchBackend } from 'react-dnd-touch-backend';
+import { default as TouchBackend } from 'react-dnd-touch-backend'
+import supportsTouch from './supportsTouch'
+
+const DndBackend = supportsTouch() ? TouchBackend : HTML5Backend
 
 import classes from './Game.scss'
 import Grid from './Grid'
@@ -55,4 +59,4 @@ const View = React.createClass({
   }
 })
 
-export default DragDropContext(HTML5Backend)(View)
+export default DragDropContext(DndBackend)(View)
